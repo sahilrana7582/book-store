@@ -13,10 +13,14 @@ app.use(
     origin: [
       'http://localhost:5173',
       'https://book-store-frontend-ten-beta.vercel.app',
+      'https://book-store-sahilrana27582s-projects.vercel.app',
+      'https://book-store-git-main-sahilrana27582s-projects.vercel.app',
+      'https://book-store-nu-six.vercel.app',
     ],
     credentials: true,
   })
 );
+
 
 // routes
 const bookRoutes = require('./src/books/book.route');
