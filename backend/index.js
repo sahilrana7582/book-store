@@ -9,9 +9,10 @@ require('dotenv').config()
 // middleware
 app.use(express.json());
 app.use(cors({
-    origin: ['http://localhost:5173',"https://book-store-git-main-sahilrana27582s-projects.vercel.app"],
+    origin: '*', // Allows requests from any origin
     credentials: true
-}))
+}));
+
 
 // routes
 const bookRoutes = require('./src/books/book.route');
