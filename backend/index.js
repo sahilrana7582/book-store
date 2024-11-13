@@ -17,6 +17,8 @@ app.use(
       'https://book-store-git-main-sahilrana27582s-projects.vercel.app',
       'https://book-store-nu-six.vercel.app',
     ],
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Origin', 'X-Requested-With', 'Content-Type', 'Accept', 'Authorization'],
     credentials: true,
   })
 );
