@@ -19,6 +19,7 @@ const Dashboard = () => {
             Authorization: `Bearer ${localStorage.getItem('token')}`,
             'Content-Type': 'application/json',
           },
+          withCredentials: true,
         });
 
         setData(response.data);
