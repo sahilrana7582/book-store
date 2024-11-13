@@ -9,7 +9,7 @@ require('dotenv').config()
 // middleware
 app.use(express.json());
 app.use(cors({
-    origin: 'https://book-store-nu-six.vercel.app', // Allows requests from any origin
+    origin: '*', // Allows requests from any origin
     credentials: true
 }));
 
