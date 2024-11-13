@@ -22,7 +22,8 @@ const AdminLogin = () => {
            const response =  await axios.post(`${getBaseUrl()}/api/auth/admin`, data, {
                 headers: {
                     'Content-Type': 'application/json',
-                }
+                },
+               withCredentials: true,
            })
            const auth = response.data;
         //    console.log(auth)
